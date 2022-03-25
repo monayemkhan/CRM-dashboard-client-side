@@ -22,7 +22,7 @@ const OrderService = () => {
             <div className="container my-5">
                 <div className=" w-75 mx-auto">
                     <div className="border rounded-3 border-danger shadow-lg">
-                        <h4 className="text-uppercase fw-bold mb-3 py-2 w-100 bg-danger text-light">Add Review</h4>
+                        <h4 className="text-uppercase fw-bold mb-3 py-2 w-100 bg-danger text-light">Order service</h4>
                         <p>Please fill the form with all info</p>
                         <div>
                             <form className="p-3" onSubmit={handleSubmit(onSubmit)}>
@@ -54,7 +54,7 @@ const OrderService = () => {
                                     <textarea className="form-control m-2" placeholder="Type Your Comments, max length 100 " {...register("review", { required: true, maxLength: 100 })} />
 
                                 </label>
-                                <input className="btn btn-danger mt-3" type="submit" />
+                                <input className="btn btn-danger mt-3" placeholder="Submit order now" type="submit" />
 
 
                             </form>
