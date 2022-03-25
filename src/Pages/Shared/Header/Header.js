@@ -58,6 +58,27 @@ const Header = () => {
                                     </Button>
                                 </ListGroup.Item>
                             </Link>
+                            <Link to={`ordered-projects`}>
+                                <ListGroup.Item className="bg-dark border-bottom text-light" as="li"  >
+                                    <Button className="text-light fs-6" variant="transparent">
+                                        Ordered Projects
+                                    </Button>
+                                </ListGroup.Item>
+                            </Link>
+                            <Link to={`order-service`}>
+                                <ListGroup.Item className="bg-dark border-bottom text-light" as="li"  >
+                                    <Button className="text-light fs-6" variant="transparent">
+                                        Order Service
+                                    </Button>
+                                </ListGroup.Item>
+                            </Link>
+                            <Link to={`contact`}>
+                                <ListGroup.Item className="bg-dark border-bottom text-light" as="li"  >
+                                    <Button className="text-light fs-6" variant="transparent">
+                                        Contact
+                                    </Button>
+                                </ListGroup.Item>
+                            </Link>
                             <Link to={``}>
                                 <ListGroup.Item className="bg-dark border-bottom text-light" as="li"  >
                                     <Button className="text-light fs-6" variant="transparent">
