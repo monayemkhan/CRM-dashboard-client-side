@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+import DashboardHome from './Pages/Dashboard/DashboardHome/DashboardHome';
+import AddNewClient from './Pages/Dashboard/ManageClients/AddNewClient/AddNewClient';
+import ViewAllClient from './Pages/Dashboard/ManageClients/ViewAllClient/ViewAllClient';
+import Footer from './Pages/Shared/Footer/Footer';
+import Header from './Pages/Shared/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <Header></Header>
+        <Routes>
+          <Route path="/" element={<DashboardHome />}>
+          </Route>
+          <Route path="/home" element={<DashboardHome />}>
+          </Route>
+          <Route path="/add-new-client" element={<AddNewClient />}>
+          </Route>
+          <Route path="/view-all-client" element={<ViewAllClient />}>
+          </Route>
+        </Routes>
+        <Footer></Footer>
+      </Router>
+    </div >
   );
 }
 

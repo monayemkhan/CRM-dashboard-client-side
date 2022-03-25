@@ -1,10 +1,7 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-nav{
+  flex-direction: row;
+  justify-content: flex-end;
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {
